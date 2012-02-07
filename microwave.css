@@ -2,7 +2,6 @@
 {
 	font-family: "Nevis";
 	src: url( "nevis.ttf" );
-	font-weight: bold;
 }
 
 html, body
@@ -21,16 +20,19 @@ header
 {
 	background-color: #ff9f57;
 	font-family: "Nevis";
-	padding: 2em 1em;
+	padding: .5em 1em;
+	min-width: 800px;
 }
 
 h1, nav
 {
-	display: inline;
+	display: inline-block;
 }
 
 nav
 {
+	color: #4D4D4D;
+	font-size: 1.3em;
 	float: right;
 }
 
@@ -48,6 +50,7 @@ nav > ul
 nav > ul > li
 {
 	display: inline;
+	margin-right: .5em;
 }
 
 nav > ul > li > a:after
