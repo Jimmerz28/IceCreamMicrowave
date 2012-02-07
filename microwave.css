@@ -57,3 +57,12 @@ nav > ul > li > a:after
 {
 	content: ".";
 }
+
+section#main
+{
+	background-image: url( "galleryRibbon.svg" );
+	height: 30em;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
