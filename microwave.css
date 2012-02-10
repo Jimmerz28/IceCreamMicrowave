@@ -121,13 +121,14 @@ section#main
 	margin-top: 5em;
 }
 
-/* 800x480 is apparently an HD size
- * http://dummyimage.com/
+/* 	
+ 	Pick a standard size
+	http://dummyimage.com/
 */
 
 section#main > div, section#main > div > img
 {
-	width: 50em;
+	width: 40em;
 	height: 30em;
 }
 
