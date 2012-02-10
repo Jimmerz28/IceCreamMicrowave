@@ -57,6 +57,7 @@ html, body
 {
 	margin: 0;
 	padding: 0;
+	overflow: visible;
 }
 
 a:link, a:hover, a:active, a:visited
@@ -71,7 +72,7 @@ header
 	min-width: 800px;
 }
 
-header, section#main > div
+header
 {
 	background-color: #ff9f57;
 }
@@ -118,7 +119,6 @@ section#main
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center center;
-	margin-top: 5em;
 }
 
 /* 	
@@ -126,17 +126,40 @@ section#main
 	http://dummyimage.com/
 */
 
-section#main > div, section#main > div > img
+figure
 {
-	width: 40em;
-	height: 30em;
+	margin: 0 auto;
+	padding: 6em 0 0 0;
+	width: 50em;
 }
 
-section#main > div
+figure, figcaption
+{
+	display: block;
+}
+
+section#main > figure > img
+{
+	position: relative;
+	width: 40em;
+	height: 30em;
+	box-shadow:1px 2px 1em #303030;
+	border: 2em solid #ff9f57;
+}
+
+figcaption
 {
 	box-shadow:1px 2px 1em #303030;
-	margin: 0 auto;
-	clear: both;
-	padding: 2em;
-	overflow: hidden;
+	z-index: -1;
+	width: 30em;
+	padding: 2em 3em;
+	position: relative;
+	margin-left: 4em;
+	margin-top: -2em;
+}
+
+figcaption > h1
+{
+	font-family: "Nevis";
+	text-transform: uppercase;
 }
