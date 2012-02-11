@@ -53,6 +53,23 @@
 
 }
 
+html, body, header, section, figure, figcaption > h1
+{
+	margin: 0;
+	padding: 0;
+}
+
+header, section, figure, figcaption, figure > img
+{
+	display: block;
+}
+
+header
+{
+	height: 4em;
+	background-color: orange;
+}
+
 nav ul
 {
 	list-style: none;
@@ -62,3 +79,34 @@ nav ul li, h1, nav
 {
 	display: inline-block;
 }
+
+figure
+{
+	height: 27em;
+	width: 50em;
+	margin: 0 auto;
+	background-color: purple;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+figure > img
+{
+	margin: 0 auto;
+}
+
+figcaption
+{
+	background-color: blue;
+	width: 21em;
+	margin: 0 auto;
+	padding: 2em;
+	margin-top: -1em;
+}
+
+section#portfolio > div
+{
+	height: 10em;
+	background-color: gray;
+}
+
