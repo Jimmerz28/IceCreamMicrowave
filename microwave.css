@@ -1,6 +1,6 @@
 @font-face 
 {
-	font-family: "Nevis", Arial, sans-serif;
+	font-family: "Nevis";
 	src: url( "fonts/nevis.ttf" );
 }
 
@@ -64,10 +64,29 @@ header, section, figure, figcaption, figure > img
 	display: block;
 }
 
+a:link, a:visited, a:hover, a:active
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+nav, figcaption
+{
+	font-family: "CartoGothicStdBook";
+}
+
+
+h1, figcaption > h2
+{
+	font-family: "Nevis";
+	text-transform: uppercase;
+	color: white;
+}
+
 header
 {
 	height: 4em;
-	background-color: orange;
+	background-color: #ff9f57;
 }
 
 nav ul
@@ -82,10 +101,9 @@ nav ul li, h1, nav
 
 figure
 {
-	height: 27em;
+	height: 36em;
 	width: 50em;
 	margin: 0 auto;
-	background-color: purple;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
@@ -93,20 +111,40 @@ figure
 figure > img
 {
 	margin: 0 auto;
+	border: 1.5em #ff9f57 solid;
 }
 
 figcaption
 {
-	background-color: blue;
-	width: 21em;
+	position: relative;
+	width: 25em;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 2em 2em .5em 2em;
 	margin-top: -1em;
+	z-index: -1;
+}
+
+
+figcaption > h2
+{
+	color: black;
+}
+
+figcaption p
+{
+	font-size: 1em;
+}
+
+figcaption span
+{
+	font-style: italic;
+	display: block;
+	margin-top: .5em;
 }
 
 section#portfolio > div
 {
 	height: 10em;
-	background-color: gray;
+	background-color: #4d4d4d;
 }
 
