@@ -53,7 +53,7 @@
 
 }
 
-html, body, header, section, figure, figcaption > h1
+html, body, header, section, figure, figcaption > h1, header nav, header h1, ul
 {
 	margin: 0;
 	padding: 0;
@@ -62,6 +62,11 @@ html, body, header, section, figure, figcaption > h1
 header, section, figure, figcaption, figure > img
 {
 	display: block;
+}
+
+body
+{
+	min-width: 45em;
 }
 
 a:link, a:visited, a:hover, a:active
@@ -85,8 +90,15 @@ h1, figcaption > h2
 
 header
 {
-	height: 4em;
+	padding: 1em 1em .5em 1em;
 	background-color: #ff9f57;
+}
+
+nav
+{
+	position: relative;
+	top: .5em;
+	float: right;
 }
 
 nav ul
@@ -94,7 +106,19 @@ nav ul
 	list-style: none;
 }
 
-nav ul li, h1, nav
+nav a
+{
+	margin-right: .5em;
+	font-size: 1.2em;
+	height: 100%;
+}
+
+nav a:after
+{
+	content: ".";
+}
+
+nav ul li, header h1, header nav
 {
 	display: inline-block;
 }
@@ -122,12 +146,13 @@ figcaption
 	padding: 2em 2em .5em 2em;
 	margin-top: -1em;
 	z-index: -1;
+	border: 1px black solid;
 }
 
 
-figcaption > h2
+figcaption, figcaption > h2, nav
 {
-	color: black;
+	color: #4d4d4d;
 }
 
 figcaption p
@@ -144,7 +169,8 @@ figcaption span
 
 section#portfolio > div
 {
-	height: 10em;
+	height: 9em;
+	padding: 1em;
 	background-color: #4d4d4d;
 }
 
