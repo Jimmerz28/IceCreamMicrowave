@@ -169,8 +169,17 @@ figcaption span
 
 section#portfolio > div
 {
+	width: 90%;
 	height: 7em;
 	padding: 1em;
 	background-color: #4d4d4d;
 }
 
+img#rightArrow
+{
+	position: relative;
+	left: -5em;
+	margin-top: -8em;
+	float: right;
+	width: 3em;
+}
