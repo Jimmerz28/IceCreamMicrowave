@@ -75,6 +75,12 @@ a:link, a:visited, a:hover, a:active
 	text-decoration: none;
 }
 
+/* Fix the stupid firefox shit */
+a
+{
+	outline: none;
+}
+
 nav, figcaption
 {
 	font-family: "CartoGothicStdBook";
@@ -101,7 +107,7 @@ nav
 	float: right;
 }
 
-nav ul
+ul
 {
 	list-style: none;
 }
@@ -118,7 +124,7 @@ nav a:after
 	content: ".";
 }
 
-nav ul li, header h1, header nav
+nav ul li, header h1, header nav, #portfolio > div li, #portfolio > div h1, #portfolio > div ul
 {
 	display: inline-block;
 }
@@ -128,8 +134,15 @@ figure
 	height: 36em;
 	width: 50em;
 	margin: 0 auto;
+}
+
+#portfolio > div:first-child
+{
+	height: 36em;
+	width: 50em;
+	margin: 0 auto;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-bottom: 5em;
 }
 
 figure > img
@@ -167,7 +180,7 @@ figcaption span
 	margin-top: .5em;
 }
 
-section#portfolio > div
+section#portfolio > div:last-child
 {
 	width: 90%;
 	height: 7em;
@@ -175,20 +188,36 @@ section#portfolio > div
 	background-color: #4d4d4d;
 }
 
-img#leftArrow
+section#portfolio > div:last-child li
 {
-	position: relative;
-	margin-top: -8em;
-	width: 3em;
-	left: 5em;
-	float: left;
+	margin-left: 1.2em;
 }
 
-img#rightArrow
+#rightArrow, #leftArrow
 {
-	position: relative;
-	left: -5em;
-	margin-top: -8em;
-	float: right;
 	width: 3em;
+	position: relative;
+	top: -7em;
+}
+
+#rightArrow
+{
+	left: -5em;
+	float: right;
+}
+
+#leftArrow
+{
+	left: 5em;	
+}
+
+/* Circle SVGs */
+svg
+{
+	fill: white;
+}
+
+svg:hover
+{
+	fill: purple;
 }
