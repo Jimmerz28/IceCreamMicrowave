@@ -195,20 +195,35 @@ figcaption span
 
 section#portfolio > div:last-child
 {
-	width: 90%;
-	height: 7em;
+	/*width: 90%;*/
+	/*height: 7em;*/
 	padding: 1em;
 	background-color: #4d4d4d;
 }
 
 section#portfolio > div:last-child li
 {
-	margin-right: 1.2em;
+	margin-right: 1.5em;
 }
 
 #portfolio > div:last-child p
 {
-	margin: 3em 5em;
+	width: 20em;
+	margin: 2em 5em;
+}
+
+#portfolio > div:last-child ul
+{
+	display: block;
+	margin-bottom: .5em;
+}
+
+/* Contains the circles */
+#portfolio > div:last-child div
+{
+  display: inline-block;
+  margin: 0 auto;
+  width: 55em;
 }
 
 #rightArrow, #leftArrow
@@ -229,7 +244,7 @@ section#portfolio > div:last-child li
 	left: 5em;	
 }
 
-/* Circle SVGs */
+/* SVG */
 svg
 {
 	fill: white;
@@ -239,3 +254,4 @@ svg:hover
 {
 	fill: #ff9f57;
 }
+
