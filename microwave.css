@@ -87,11 +87,16 @@ nav, figcaption
 }
 
 
-h1, figcaption > h2
+h1, figcaption > h2, #portfolio > div:last-child p
 {
 	font-family: "Nevis";
 	text-transform: uppercase;
 	color: white;
+}
+
+#portfolio > div:last-child p
+{
+	text-transform: lowercase;
 }
 
 header
@@ -124,11 +129,12 @@ nav a:after
 	content: ".";
 }
 
-nav ul li, header h1, header nav, #portfolio > div li, #portfolio > div h1, #portfolio > div ul
+nav ul li, header h1, header nav, #portfolio > div li, #portfolio > div h1, #portfolio > div ul, #portfolio div:last-child p
 {
 	display: inline-block;
 }
 
+/* Slideshow images */
 figure
 {
 	height: 36em;
@@ -191,6 +197,11 @@ section#portfolio > div:last-child
 section#portfolio > div:last-child li
 {
 	margin-left: 1.2em;
+}
+
+#portfolio > div:last-child p
+{
+	margin: 3em 5em;
 }
 
 #rightArrow, #leftArrow
