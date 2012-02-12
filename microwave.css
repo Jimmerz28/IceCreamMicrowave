@@ -175,6 +175,15 @@ section#portfolio > div
 	background-color: #4d4d4d;
 }
 
+img#leftArrow
+{
+	position: relative;
+	margin-top: -8em;
+	width: 3em;
+	left: 5em;
+	float: left;
+}
+
 img#rightArrow
 {
 	position: relative;
