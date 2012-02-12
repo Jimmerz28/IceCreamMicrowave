@@ -64,6 +64,16 @@ header, section, figure, figcaption, figure > img
 	display: block;
 }
 
+nav ul li, header h1, header nav, #portfolio > div li
+{
+	display: inline-block;
+}
+
+#portfolio > div h1, #portfolio > div ul, #portfolio div:last-child p
+{
+	display: inline;
+}
+
 body
 {
 	min-width: 45em;
@@ -129,10 +139,7 @@ nav a:after
 	content: ".";
 }
 
-nav ul li, header h1, header nav, #portfolio > div li, #portfolio > div h1, #portfolio > div ul, #portfolio div:last-child p
-{
-	display: inline-block;
-}
+
 
 /* Slideshow images */
 figure
@@ -196,7 +203,7 @@ section#portfolio > div:last-child
 
 section#portfolio > div:last-child li
 {
-	margin-left: 1.2em;
+	margin-right: 1.2em;
 }
 
 #portfolio > div:last-child p
