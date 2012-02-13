@@ -108,6 +108,10 @@ h1, figcaption > h2, #portfolio > div:last-child p
 #portfolio > div:last-child p
 {
 	text-transform: lowercase;
+	display: inline-block;
+	width: 13em;
+	padding: 0 5em;
+	text-align: center;
 }
 
 header
