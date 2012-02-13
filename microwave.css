@@ -92,7 +92,7 @@ a
 	height: 100%;
 }
 
-nav, figcaption
+nav, figcaption, #portfolio > div:last-child p
 {
 	font-family: "CartoGothicStdBook";
 }
@@ -109,9 +109,10 @@ h1, figcaption > h2, #portfolio > div:last-child p
 {
 	text-transform: lowercase;
 	display: inline-block;
-	width: 13em;
-	padding: 0 5em;
+	width: 10em;
+	padding: 0 2.5em;
 	text-align: center;
+	font-size: 1.2em;
 }
 
 header
@@ -250,7 +251,9 @@ svg
 	fill: white;
 }
 
-/* Retain color after the user clicks the circle */
+/* 	Retain color after the user clicks the circle 
+	Not working in Chrome
+*/
 a:hover svg, a:focus svg
 {
 	fill: #ff9f57;
