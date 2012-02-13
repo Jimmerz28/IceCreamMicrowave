@@ -89,6 +89,7 @@ a:link, a:visited, a:hover, a:active
 a
 {
 	outline: none;
+	height: 100%;
 }
 
 nav, figcaption
@@ -131,7 +132,6 @@ nav a
 {
 	margin-right: .5em;
 	font-size: 1.2em;
-	height: 100%;
 }
 
 nav a:after
@@ -204,13 +204,7 @@ section#portfolio > div:last-child
 
 section#portfolio > div:last-child li
 {
-	margin-right: 1.5em;
-}
-
-#portfolio > div:last-child p
-{
-	width: 20em;
-	margin: 2em 5em;
+	padding: .5em;
 }
 
 #portfolio > div:last-child ul
@@ -252,7 +246,8 @@ svg
 	fill: white;
 }
 
-svg:hover
+/* Retain color after the user clicks the circle */
+a:hover svg, a:focus svg
 {
 	fill: #ff9f57;
 }
