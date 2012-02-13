@@ -92,6 +92,12 @@ a
 	height: 100%;
 }
 
+/* Retarded IE */
+img
+{
+	border: none;
+}
+
 nav, figcaption, #portfolio > div:last-child p
 {
 	font-family: "CartoGothicStdBook";
