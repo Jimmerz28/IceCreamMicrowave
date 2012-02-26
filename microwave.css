@@ -265,3 +265,18 @@ a:hover svg, a:focus svg
 	fill: #ff9f57;
 }
 
+section#contact
+{
+	background-color: #4d4d4d;
+	padding: 2em;
+}
+
+section#contact > div > img
+{
+	margin-right: 1em;
+}
+
+section#contact > div:nth-child(2)
+{
+	background-color: #ff9f57;
+}
