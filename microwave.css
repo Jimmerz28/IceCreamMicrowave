@@ -59,6 +59,14 @@ html, body, header, section, figure, figcaption > h1, header nav, header h1, ul
 	padding: 0;
 }
 
+/*
+http://stackoverflow.com/questions/4980525/css-center-display-inline-block
+*/
+#contact, footer
+{
+	text-align: center;
+}
+
 header, section, figure, figcaption, figure > img
 {
 	display: block;
@@ -98,13 +106,13 @@ img
 	border: none;
 }
 
-nav, figcaption, #portfolio > div:last-child p
+nav, figcaption, #portfolio > div:last-child p, footer
 {
 	font-family: "CartoGothicStdBook";
 }
 
 
-h1, figcaption > h2, #portfolio > div:last-child p
+h1, figcaption > h2, #portfolio > div:last-child p, #resume > h2
 {
 	font-family: "Nevis";
 	text-transform: uppercase;
@@ -187,7 +195,7 @@ figcaption
 }
 
 
-figcaption, figcaption > h2, nav
+figcaption, figcaption > h2, nav, #resume > h2
 {
 	color: #4d4d4d;
 }
@@ -276,7 +284,37 @@ section#contact > div > img
 	margin-right: 1em;
 }
 
-section#contact > div:nth-child(2)
+#contact > div
+{
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+}
+
+#resume, footer
+{
+	padding: 1em;
+}
+
+footer
 {
 	background-color: #ff9f57;
+	color: white;
+}
+
+footer p
+{
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+
+footer p:first-child
+{
+	margin-right: 5em;
+}
+
+footer p:last-child
+{
+	color: #4d4d4d;
 }
