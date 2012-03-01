@@ -1,3 +1,11 @@
+/*
+	Color Scheme:
+	
+	barely melon	 (orange) #FF9F57 http://www.colourlovers.com/color/FF9F57/barely_melon
+	
+	Another Gray (gray)	#4D4D4D	http://www.colourlovers.com/color/4D4D4D/Another_Gray
+*/
+
 @font-face 
 {
 	font-family: "Nevis";
@@ -53,92 +61,45 @@
 
 }
 
-html, body, header, section, figure, figcaption > h1, header nav, header h1, ul
+/*
+http://stackoverflow.com/questions/4980525/css-center-display-inline-block
+*/
+
+html, body
 {
 	margin: 0;
 	padding: 0;
 }
 
-/*
-http://stackoverflow.com/questions/4980525/css-center-display-inline-block
-*/
-#contact, footer
+header li
 {
-	text-align: center;
+	font-family: CartoGothicStdBook;
 }
 
-header, section, figure, figcaption, figure > img
+header > h1
 {
-	display: block;
+	font-family: Nevis;
 }
 
-nav ul li, header h1, header nav, #portfolio > div li
+header > h1
 {
-	display: inline-block;
-}
-
-#portfolio > div h1, #portfolio > div ul, #portfolio div:last-child p
-{
-	display: inline;
-}
-
-body
-{
-	min-width: 45em;
-}
-
-a:link, a:visited, a:hover, a:active
-{
-	color: inherit;
-	text-decoration: none;
-}
-
-/* Fix the stupid firefox shit */
-a
-{
-	outline: none;
-	height: 100%;
-}
-
-/* Retarded IE */
-img
-{
-	border: none;
-}
-
-nav, figcaption, #portfolio > div:last-child p, footer
-{
-	font-family: "CartoGothicStdBook";
-}
-
-
-h1, figcaption > h2, #portfolio > div:last-child p, #resume > h2
-{
-	font-family: "Nevis";
 	text-transform: uppercase;
 	color: white;
 }
 
-#portfolio > div:last-child p
-{
-	text-transform: lowercase;
-	display: inline-block;
-	width: 10em;
-	padding: 0 2.5em;
-	text-align: center;
-	font-size: 1.2em;
-}
-
 header
 {
-	padding: 1em 1em .5em 1em;
-	background-color: #ff9f57;
+	background-color: #FF9F57;
+	padding: 2em 1em;
 }
 
-nav
+header li, header > h1, header > nav
 {
-	position: relative;
-	top: .5em;
+	display: inline;
+}
+
+header > nav
+{
 	float: right;
 }
 
@@ -147,174 +108,3 @@ ul
 	list-style: none;
 }
 
-nav a
-{
-	margin-right: .5em;
-	font-size: 1.2em;
-}
-
-nav a:after
-{
-	content: ".";
-}
-
-
-
-/* Slideshow images */
-figure
-{
-	height: 36em;
-	width: 50em;
-	margin: 0 auto;
-}
-
-#portfolio > div:first-child
-{
-	height: 36em;
-	width: 50em;
-	margin: 0 auto;
-	margin-top: 2em;
-	margin-bottom: 5em;
-}
-
-figure > img
-{
-	margin: 0 auto;
-	border: 1.5em #ff9f57 solid;
-}
-
-figcaption
-{
-	position: relative;
-	width: 25em;
-	margin: 0 auto;
-	padding: 2em 2em .5em 2em;
-	margin-top: -1em;
-	z-index: -1;
-	border: 1px black solid;
-}
-
-
-figcaption, figcaption > h2, nav, #resume > h2
-{
-	color: #4d4d4d;
-}
-
-figcaption p
-{
-	font-size: 1em;
-}
-
-figcaption span
-{
-	font-style: italic;
-	display: block;
-	margin-top: .5em;
-}
-
-section#portfolio > div:last-child
-{
-	/*	When we made this by a % the interior child widths were meaningless */
-	/*width: 90%;*/
-	/*height: 7em;*/
-	padding: 1em;
-	background-color: #4d4d4d;
-}
-
-section#portfolio > div:last-child li
-{
-	padding: .5em;
-}
-
-#portfolio > div:last-child ul
-{
-	display: block;
-	margin-bottom: .5em;
-}
-
-/* Contains the circles */
-#portfolio > div:last-child div
-{
-	display: inline-block;
-	margin: 0 auto;
-	width: 55em;
-	vertical-align: middle;
-}
-
-#rightArrow, #leftArrow
-{
-	width: 3em;
-	position: relative;
-	top: -7em;
-}
-
-#rightArrow
-{
-	left: -5em;
-	float: right;
-}
-
-#leftArrow
-{
-	left: 5em;	
-}
-
-/* SVG */
-svg
-{
-	fill: white;
-}
-
-/* 	Retain color after the user clicks the circle 
-	Not working in Chrome
-*/
-a:hover svg, a:focus svg
-{
-	fill: #ff9f57;
-}
-
-section#contact
-{
-	background-color: #4d4d4d;
-	padding: 2em;
-}
-
-section#contact > div > img
-{
-	margin-right: 1em;
-}
-
-#contact > div
-{
-	margin: 0 auto;
-	display: inline-block;
-	text-align: center;
-}
-
-#resume, footer
-{
-	padding: 1em;
-}
-
-footer
-{
-	background-color: #ff9f57;
-	color: white;
-}
-
-footer p
-{
-	display: inline-block;
-	text-transform: capitalize;
-	font-size: 1.2em;
-}
-
-footer p:first-child
-{
-	margin-right: 5em;
-}
-
-footer p:last-child
-{
-	color: #4d4d4d;
-}
