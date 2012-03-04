@@ -62,13 +62,20 @@
 }
 
 /*
-http://stackoverflow.com/questions/4980525/css-center-display-inline-block
+	http://stackoverflow.com/questions/4980525/css-center-display-inline-block
 */
 
 html, body
 {
 	margin: 0;
 	padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+	text-decoration: none;
+	color: inherit;
+	outline: none;
 }
 
 header li
@@ -90,7 +97,27 @@ header > h1
 header
 {
 	background-color: #FF9F57;
+}
+
+header li
+{
+	color: #4D4D4D;
+}
+
+header
+{
 	padding: 2em 1em;
+}
+
+header li
+{
+	margin-right: 1em;
+	font-size: 1.2em;
+}
+
+header li a:after
+{
+	content: ".";
 }
 
 header li, header > h1, header > nav
@@ -106,5 +133,45 @@ header > nav
 ul
 {
 	list-style: none;
+}
+
+#portfolio > div:first-child
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#rightArrow, #leftArrow
+{
+	position: relative;
+	top: -10em;
+}
+
+#rightArrow
+{
+	
+	left: 15em;
+}
+
+#leftArrow
+{
+	left: -15em;
+}
+
+figcaption
+{
+	width: 25em;
+	margin: 0 auto;
+	border: thin black dashed;
+}
+
+figcaption span
+{
+	display: block;
+}
+
+figure > img
+{
+	border: 1em #FF9F57 solid;
 }
 
