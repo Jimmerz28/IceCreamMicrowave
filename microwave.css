@@ -137,8 +137,13 @@ ul
 
 #portfolio > div:first-child
 {
+	padding-top: 5em;
 	margin: 0 auto;
 	text-align: center;
+	background-image: url("images/galleryRibbon.svg");
+	background-position: center 10em;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #rightArrow, #leftArrow
