@@ -133,6 +133,8 @@ header > nav
 ul
 {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 #portfolio > div:first-child
@@ -198,3 +200,59 @@ figure > img
 	border: 1em #FF9F57 solid;
 }
 
+/* Circle Section */
+#folioCircles
+{
+	background-color: #4D4D4D;
+	padding: 1em;
+	overflow: hidden;
+}
+
+#folioCircles svg
+{
+	fill: white;
+}
+
+#folioCircles svg:hover
+{
+	fill: #FF9F57;
+}
+
+#folioCircles ul > li
+{
+	display: inline-block;
+	margin-right: 1em;
+}
+
+#folioCircles ul
+{
+	margin-bottom: .5em;
+}
+
+#folioCircles div:nth-child(2)
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#folioCircles div:first-child *
+{
+	display: inline;
+	padding-right: 3em;
+}
+
+#folioCircles div:first-child
+{
+	position: relative;
+	z-index: 2;
+	margin-top: -1.5em;
+	top: 7em;
+}
+
+@media screen and (min-width: 1000px)
+{
+	#folioCircles ul > li
+	{
+		margin-right: .5em;
+	}
+}
