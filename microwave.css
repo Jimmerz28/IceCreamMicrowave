@@ -78,6 +78,11 @@ a:link, a:visited, a:hover, a:active
 	outline: none;
 }
 
+a
+{
+	height: 100%;
+}
+
 header li, figcaption p
 {
 	font-family: CartoGothicStdBook;
@@ -193,6 +198,8 @@ figcaption span
 {
 	display: block;
 	font-style: italic;
+	text-transform: capitalize;
+	margin-top: .5em;
 }
 
 figure > img
@@ -241,12 +248,11 @@ figure > img
 	padding-right: 3em;
 }
 
+
 #folioCircles div:first-child
 {
-	position: relative;
-	z-index: 2;
-	margin-top: -1.5em;
-	top: 7em;
+	position: absolute;
+	margin-top: 5em;
 }
 
 @media screen and (min-width: 1000px)
