@@ -88,7 +88,7 @@ header li, figcaption p
 	font-family: CartoGothicStdBook;
 }
 
-header > h1, figcaption h2
+header > h1, figcaption h2, #folioCircles div:first-child *
 {
 	font-family: Nevis;
 }
@@ -245,7 +245,19 @@ figure > img
 #folioCircles div:first-child *
 {
 	display: inline;
-	padding-right: 3em;
+	padding-right: 4.5em;
+	color: white;
+}
+
+#folioCircles div:first-child h1
+{
+	text-transform: uppercase;
+}
+
+#folioCircles div:first-child p
+{
+	text-transform: lowercase;
+	font-size: 1.5em;
 }
 
 
