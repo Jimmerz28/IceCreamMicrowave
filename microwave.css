@@ -88,7 +88,7 @@ header li, figcaption p
 	font-family: CartoGothicStdBook;
 }
 
-header > h1, figcaption h2, #folioCircles div:first-child *
+header > h1, figcaption h2, #folioCircles div:first-child *, #resume h2
 {
 	font-family: Nevis;
 }
@@ -265,6 +265,19 @@ figure > img
 {
 	position: absolute;
 	margin-top: 5em;
+}
+
+#resume
+{
+	padding: 1em;
+	/* Temporary Height until Mitchell does something... */
+	height: 50em;
+}
+
+#resume h2
+{
+	color: #4D4D4D;
+	text-transform: uppercase;
 }
 
 @media screen and (min-width: 1000px)
