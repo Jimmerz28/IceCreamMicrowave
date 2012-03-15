@@ -88,12 +88,12 @@ header li, figcaption p
 	font-family: CartoGothicStdBook;
 }
 
-header > h1, figcaption h2, #folioCircles div:first-child *, #resume h2
+header > h1, figcaption h2, #folioCircles div:first-child *, #resume h2, #contact > div > h1
 {
 	font-family: Nevis;
 }
 
-header > h1
+header > h1, #contact > div > h1
 {
 	text-transform: uppercase;
 	color: white;
@@ -278,6 +278,34 @@ figure > img
 {
 	color: #4D4D4D;
 	text-transform: uppercase;
+}
+
+#contact > div
+{
+	background-color: #4D4D4D;
+	text-align: center;
+}
+
+#contact
+{
+	padding-right: 10em;
+}
+
+#contact > div
+{
+	padding: 2em;
+}
+
+#contact > div > h1
+{
+	display: inline-block;
+	position: absolute;
+	left: 1em;
+}
+
+#contact > div > img
+{
+	vertical-align: middle;
 }
 
 @media screen and (min-width: 1000px)
