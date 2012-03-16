@@ -88,12 +88,12 @@ header li, figcaption p
 	font-family: CartoGothicStdBook;
 }
 
-header > h1, figcaption h2, #folioCircles div:first-child *, #resume h2, #contact > div > h1
+header > h1, figcaption h2, #folioCircles div:first-child *, #resume h2, #contact
 {
 	font-family: Nevis;
 }
 
-header > h1, #contact > div > h1
+header > h1, #contact
 {
 	text-transform: uppercase;
 	color: white;
@@ -215,12 +215,12 @@ figure > img
 	overflow: hidden;
 }
 
-#folioCircles svg
+#folioCircles svg, #contact svg
 {
 	fill: white;
 }
 
-#folioCircles svg:hover
+#folioCircles svg:hover, #contact svg:hover
 {
 	fill: #FF9F57;
 }
@@ -293,7 +293,12 @@ figure > img
 
 #contact > div
 {
-	padding: 2em;
+	padding: 2em 4em 4em;
+}
+
+#contact > div > div
+{
+	margin-bottom: 3em;
 }
 
 #contact > div > h1
@@ -303,9 +308,15 @@ figure > img
 	left: 1em;
 }
 
-#contact > div > img
+#contact a
+{
+	font-size: 2.5em;
+}
+
+#contact > div > div > img
 {
 	vertical-align: middle;
+	padding: 0 .5em;
 }
 
 @media screen and (min-width: 1000px)
