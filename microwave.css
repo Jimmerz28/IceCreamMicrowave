@@ -83,17 +83,17 @@ a
 	height: 100%;
 }
 
-header li, figcaption p, footer
+header li, figcaption p, footer, #contact, #resume > div:first-of-type h2 + a,#folioCircles div:first-child p
 {
 	font-family: CartoGothicStdBook;
 }
 
-header > h1, figcaption h2, #folioCircles div:first-child *, #resume h2, #contact
+header > h1, figcaption h2, #folioCircles div:first-child h1, #resume h2
 {
 	font-family: Nevis;
 }
 
-header > h1, #contact
+header > h1, #contact, #resume > div:first-of-type h2
 {
 	text-transform: uppercase;
 	color: white;
@@ -280,11 +280,32 @@ figure > img
 	background-size: 80%;
 }
 
-#resume h2
+#resume > div:first-of-type
 {
-	color: #4D4D4D;
-	text-transform: uppercase;
+	padding-right: 10em;
 }
+
+#resume > div:first-of-type > div
+{
+	background-color: #4D4D4D;
+	margin-left: -1em;
+	margin-top: 15em;
+	padding: 4em 1em;
+}
+
+#resume > div:first-of-type h2
+{
+	display: inline;
+	margin-right: 2em;
+}
+
+#resume > div:first-of-type h2 + a
+{
+	color: white;
+	font-size: 1.5em;
+}
+
+/* Contact Information */
 
 #contact > div
 {
