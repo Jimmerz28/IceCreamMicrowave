@@ -83,7 +83,7 @@ a
 	height: 100%;
 }
 
-header li, figcaption p
+header li, figcaption p, footer
 {
 	font-family: CartoGothicStdBook;
 }
@@ -289,6 +289,7 @@ figure > img
 #contact
 {
 	padding-right: 10em;
+	padding-bottom: 3em;
 }
 
 #contact > div
@@ -317,6 +318,31 @@ figure > img
 {
 	vertical-align: middle;
 	padding: 0 .5em;
+}
+
+/* Footer */
+
+footer
+{
+	font-size: 1.5em;
+	text-align: center;
+	padding: 2em;
+}
+
+footer p
+{
+	display: inline;
+	margin-right: 3em;
+}
+
+footer p:first-child
+{
+	color: white;
+}
+
+footer p:nth-child(2)
+{
+	color: #4D4D4D;
 }
 
 @media screen and (min-width: 1000px)
