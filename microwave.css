@@ -99,7 +99,7 @@ header > h1, #contact
 	color: white;
 }
 
-header
+header, footer
 {
 	background-color: #FF9F57;
 }
