@@ -267,11 +267,17 @@ figure > img
 	margin-top: 5em;
 }
 
+/* Resume Section */
+
 #resume
 {
 	padding: 1em;
 	/* Temporary Height until Mitchell does something... */
 	height: 50em;
+	background-image: url( "images/resumeRibbon.svg" );
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 80%;
 }
 
 #resume h2
