@@ -279,7 +279,7 @@ figure > img
 	padding: 1em;
 	/* Temporary Height until Mitchell does something... */
 	height: 50em;
-	background-image: url( "images/cloud9.svg" ), url( "images/resumeRibbon.svg" );
+	background-image: url( "images/cloud9.png" ), url( "images/resumeRibbon.svg" );
 	background-repeat: repeat-x, no-repeat;
 	background-position: top, top left;
 	background-size: auto, 80%;
@@ -322,9 +322,11 @@ figure > img
 {
 	padding-right: 10em;
 	padding-bottom: 3em;
-	background-image: url( "images/cloud9.svg" );
-	background-repeat: repeat-x;
-	background-position: top;
+	padding-top: 15em;
+	background-image: url( "images/cloud9.png" ), url( "images/contactRibbon.svg" );
+	background-repeat: repeat-x, no-repeat;
+	background-position: top, top left;
+	background-size: auto, 90%;
 }
 
 #contact > div
@@ -362,7 +364,7 @@ footer
 	font-size: 1.5em;
 	text-align: center;
 	padding: 2em;
-	background-image: url( "images/cloud9.svg" );
+	background-image: url( "images/cloud9.png" );
 	background-repeat: repeat-x;
 	background-position: top;
 }
