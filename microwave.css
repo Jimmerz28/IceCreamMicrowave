@@ -277,8 +277,7 @@ figure > img
 #resume
 {
 	padding: 1em;
-	/* Temporary Height until Mitchell does something... */
-	height: 50em;
+	padding-bottom: 5em;
 	background-image: url( "images/cloud9.png" ), url( "images/resumeRibbon.svg" );
 	background-repeat: repeat-x, no-repeat;
 	background-position: top, top left;
@@ -288,6 +287,7 @@ figure > img
 #resume > div:first-of-type
 {
 	padding-right: 10em;
+	margin-bottom: 4em;
 }
 
 #resume > div:first-of-type > div
@@ -308,6 +308,16 @@ figure > img
 {
 	color: white;
 	font-size: 1.5em;
+}
+
+#resume > div > img
+{
+	width: 100%;
+}
+
+#resume > div:nth-of-type(2)
+{
+	padding: 0 5em;
 }
 
 /* Contact Information */
