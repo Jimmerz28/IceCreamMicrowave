@@ -322,6 +322,11 @@ figure > img
 
 /* Contact Information */
 
+#contact h1
+{
+	display: inline-block;
+}
+
 #contact > div
 {
 	background-color: #4D4D4D;
@@ -344,27 +349,20 @@ figure > img
 	padding: 2em 4em 4em;
 }
 
-#contact > div > div
-{
-	margin-bottom: 3em;
-}
-
-#contact > div > h1
+#contact ul li
 {
 	display: inline-block;
-	position: absolute;
-	left: 1em;
+	padding: 1em;
 }
 
-#contact a
+#contact ul > li > ul > li
 {
-	font-size: 2.5em;
+	display: none;
 }
 
-#contact > div > div > img
+#contact ul > li > img:hover + ul > li
 {
-	vertical-align: middle;
-	padding: 0 .5em;
+	display: block;
 }
 
 /* Footer */
