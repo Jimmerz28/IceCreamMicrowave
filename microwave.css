@@ -360,13 +360,18 @@ figure > img
 	display: none;
 }
 
-#contact ul > li > img:hover + ul > li
+#contact ul > li > a:hover + ul > li
 {
 	display: block;
 	position: absolute;
 	text-align: center;
 	font-size: 1.2em;
 	left: 32%;
+}
+
+#contact svg:hover:first-of-type path
+{
+	fill: #FF9F57;
 }
 
 /* Footer */
