@@ -363,6 +363,10 @@ figure > img
 #contact ul > li > img:hover + ul > li
 {
 	display: block;
+	position: absolute;
+	text-align: center;
+	font-size: 1.2em;
+	left: 32%;
 }
 
 /* Footer */
