@@ -362,11 +362,16 @@ figure > img
 
 #contact ul > li > a:hover + ul > li
 {
-	display: block;
+	display: inline-block;
 	position: absolute;
-	text-align: center;
-	font-size: 1.2em;
-	left: 32%;
+	left: 25%;
+	font-size: 2em;
+}
+
+/* Since this string is so short we need to give some padding */
+#contact ul > li:nth-child(2) > ul > li
+{
+	margin-left: 3em;
 }
 
 #contact svg:hover:first-of-type path
