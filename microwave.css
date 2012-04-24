@@ -216,7 +216,7 @@ figure > img
 #folioCircles
 {
 	background-color: #4D4D4D;
-	padding: 1em;
+	padding: 2em 1em;
 	overflow: hidden;
 }
 
@@ -243,8 +243,7 @@ figure > img
 
 #folioCircles div:nth-child(2)
 {
-	text-align: center;
-	vertical-align: middle;
+	  text-align: center;
 }
 
 #folioCircles div:first-child *
@@ -269,8 +268,9 @@ figure > img
 #folioCircles div:first-child
 {
 	position: absolute;
-	margin-top: 5em;
+	margin-top: 1em;
 }
+
 
 /* Resume Section */
 
