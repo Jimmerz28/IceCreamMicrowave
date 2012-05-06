@@ -14,12 +14,18 @@
 		{
 			$("#leftArrow").on("click", function() 
 			{
-				console.log( "lefty" );
+				$("figure:visible").fadeOut("slow", function() 
+				{
+					$(this).prev().fadeIn("slow");
+				});
 			});
 			
 			$("#rightArrow").on( "click", function() 
 			{
-				console.log( "righty" );
+				$("figure:visible").fadeOut("slow", function() 
+				{
+					$(this).next().fadeIn("slow");
+				});
 			});
 		
 		});
@@ -50,35 +56,35 @@
 				</figcaption>
 			</figure>
 			<figure>
-				<img src="snuggle.png" alt="#" />
+				<img src="images/slides/snuggle.png" alt="#" />
 				<figcaption>
 					<h2>Nissan Leaf Logo 1</h2>
 					<p>This was 1 of 3 logos created as a concept logo for the fullyelectric NissanLEAF. The idea behind this particular design was being edgy with a touch of elegance. <span>Adobe Illustrator</span></p>
 				</figcaption>
 			</figure>
 			<figure>
-				<img src="baskinrobbins.png" alt="#" />
+				<img src="images/slides/baskinrobbins.png" alt="#" />
 				<figcaption>
 					<h2>Nissan Leaf Logo 1</h2>
 					<p>This was 1 of 3 logos created as a concept logo for the fullyelectric NissanLEAF. The idea behind this particular design was being edgy with a touch of elegance. <span>Adobe Illustrator</span></p>
 				</figcaption>
 			</figure>
 			<figure>
-				<img src="enerkem_app.png" alt="#" />
+				<img src="images/slides/enerkem_app.png" alt="#" />
 				<figcaption>
 					<h2>Nissan Leaf Logo 1</h2>
 					<p>This was 1 of 3 logos created as a concept logo for the fullyelectric NissanLEAF. The idea behind this particular design was being edgy with a touch of elegance. <span>Adobe Illustrator</span></p>
 				</figcaption>
 			</figure>
 			<figure>
-				<img src="stltoday_redesign.png" alt="#" />
+				<img src="images/slides/stltoday_redesign.png" alt="#" />
 				<figcaption>
 					<h2>Nissan Leaf Logo 1</h2>
 					<p>This was 1 of 3 logos created as a concept logo for the fullyelectric NissanLEAF. The idea behind this particular design was being edgy with a touch of elegance. <span>Adobe Illustrator</span></p>
 				</figcaption>
 			</figure>
-			<a href="#"><img id="leftArrow" src="images/leftArrow.svg" alt="" /></a>
-			<a href="#"><img id="rightArrow" src="images/rightArrow.svg" alt="" /></a>
+			<a><img id="leftArrow" src="images/leftArrow.svg" alt="leftArrow" /></a>
+			<a><img id="rightArrow" src="images/rightArrow.svg" alt="rightArrow" /></a>
 		</div>
 		
 		<div id="folioCircles">
