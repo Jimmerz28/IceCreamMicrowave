@@ -180,6 +180,12 @@ figure
 	background-position: center 30%;
 	background-repeat: no-repeat;
 	background-size: contain;
+	display: none;
+}
+
+figure:first-child
+{
+	display: block;
 }
 
 figcaption
@@ -210,6 +216,8 @@ figcaption span
 figure > img
 {
 	border: 1em #FF9F57 solid;
+	width: 640px;
+	height: 350px;
 }
 
 /* Circle Section */
