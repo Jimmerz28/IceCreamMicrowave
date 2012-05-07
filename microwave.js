@@ -2,10 +2,22 @@ $(document).ready( function()
 {
 	$("#leftArrow").on("click", function() 
 	{
-		$("figure:visible").fadeOut("slow", function() 
+		if ( $("figure:visible").prev("figure").length == 0 )
 		{
-			$(this).prev("figure").fadeIn("slow");
-		});
+			$("figure:visible").fadeOut("slow", function() 
+			{
+				// Don't forget index starts at 0
+				$("figure").last().fadeIn("slow");
+			});
+		}
+		
+		else 
+		{
+			$("figure:visible").fadeOut("slow", function() 
+			{
+				$(this).prev("figure").fadeIn("slow");
+			});
+		}
 	});
 	
 	$("#rightArrow").on( "click", function() 
@@ -16,7 +28,7 @@ $(document).ready( function()
 			$("figure:visible").fadeOut("slow", function() 
 			{
 				// Don't forget index starts at 0
-				$("figure").eq(0).fadeIn("slow");
+				$("figure").first().fadeIn("slow");
 			});
 		}
 		
